@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/todo', 'TodoController@index');
+Route::get('/todo', 'TodoController@index')->name('todo.create');
 Route::get('/todo/create', 'TodoController@create');
