@@ -40,6 +40,16 @@ class TodoController extends Controller
     public function show($id)
     {
         $todo = $this->todo->find($id);
+
         return view('todo.show', ['todo' => $todo]);
+    }
+
+    // TODO: ルートパラメータを引数に受け取る
+    public function edit($id)
+    {
+        // TODO: 編集対象のレコードの情報を持つTodoモデルのインスタンスを取得
+        $todo = $this->todo->find($id);
+
+        return view('todo.edit', ['todo' => $todo]);
     }
 }
