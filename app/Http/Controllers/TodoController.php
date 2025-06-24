@@ -53,7 +53,6 @@ class TodoController extends Controller
 
     public function update(TodoRequest $request, $id)
     {
-        // TODO: リクエストされた値を取得
         $inputs = $request->all();
         
         $todo = $this->todo->find($id);

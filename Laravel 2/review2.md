@@ -3,14 +3,24 @@
 ## Todo編集機能
 
 ### @method('PUT')を記述した行に何が出力されているか
+```HTML
+<input type="hidden" name="method" value="PUT">
+```
+#### POSTで送るが、PUTとして処理するようにしている
 
 ### findメソッドの引数に指定しているIDは何のIDか
+#### ユーザーが選択したID
 
 ### findメソッドで実行しているSQLは何か
+```PHP
+select * from `todos` where `id` = $id limit 1;
+```
 
 ### findメソッドで取得できる値は何か
+#### Todoオブジェクト型
 
 ### saveメソッドは何を基準にINSERTとUPDATEを切り替えているのか
+#### 主キーがNULLならINSERT、主キーに値がある場合はUPDATE
 
 ## Todo論理削除
 
