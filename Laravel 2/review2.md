@@ -25,12 +25,15 @@ select * from `todos` where `id` = $id limit 1;
 ## Todo論理削除
 
 ### traitとclassの違いとは
+#### classはオブジェクトの設計図で、インスタンス化してオブジェクトを作成できる。traitはclassに機能を追加するためのもので、インスタンス化はできない。
 
 ### traitを使用するメリットとは
+#### 複数のクラスで同じ処理をしたい場合にuse trait名とクラスに記載するだけでできるから開発の効率があがる。
 
 ## その他
 
 ### TodoControllerクラスのコンストラクタはどのタイミングで実行されるか
+
 
 ### RequestクラスからFormRequestクラスに変更した理由
 
